@@ -432,38 +432,59 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.ico-circle {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+}
+.service-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    height: 350px;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+.service-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+    text-align: center;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+.service-box .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.service-box .ico-circle i {
+    line-height: 0;
+    font-size: 30px;
+}
+
+.service-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+
+.service-box .s-description {
+    color: #4e4e4e;
 }
 
 /*--------------------------------------------------------------
